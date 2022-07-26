@@ -31,7 +31,7 @@ namespace WebApplication1.Service
 
         public void SaveOrUpdate(Seller seller)
         {
-            _dbContext.Database.ExecuteSqlRaw($"SaveOrUpdateSeller {seller.SellerId},{seller.Name},{seller.Email},{seller.Age}");
+            _dbContext.Database.ExecuteSqlRaw($"SaveOrUpdateSeller {seller.SellerId},{seller.Name},{seller.Email},{seller.Fax},{seller.Age},{seller.Phone}");
 
             var sellers = _dbContext.Sellers.ToList();
 

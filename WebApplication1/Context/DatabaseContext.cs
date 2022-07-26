@@ -11,7 +11,7 @@ namespace WebApplication1.Context
     { 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var connectionString = string.Format(@"Data Source=VIKUM\SQLEXPRESS;Initial Catalog=exam3;Integrated Security=True");
+            var connectionString = string.Format(@"Data Source=VIKUM\SQLEXPRESS;Initial Catalog=exam4;Integrated Security=True");
             options.UseSqlServer(connectionString);
         }
         public DbSet<Seller> Sellers { get; set; }
